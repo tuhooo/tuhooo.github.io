@@ -4,10 +4,11 @@
 entries:
   - title: info
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
+      - title: 个人博客
       - title: github repo
         url: https://github.com/tuhooo/tuhooo.github.io
       - title: "hello"
+      - title: email(tuhooo@163.com)
 
   - title: all posts
     post_list:
