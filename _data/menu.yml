@@ -31,7 +31,7 @@ entries:
       - title: with subitems
         entries:
           - title: with subsubitems
-          - title: example page
+          - title: about me
             url: about
   - title: PRO TIP
     entries:
