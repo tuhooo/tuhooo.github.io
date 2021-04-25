@@ -14,10 +14,6 @@ src/java.base/share/native/launcher/main.c
 As shown below:
 
 ```
-
-
-
-
 JNIEXPORT int
 main(int argc, char **argv)
 {
@@ -46,5 +42,4 @@ main(int argc, char **argv)
                    const_cpwildcard, const_javaw, 0);
 
 }
-
 ```
