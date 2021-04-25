@@ -43,3 +43,17 @@ main(int argc, char **argv)
 
 }
 ```
+
+## Key node of runtime
+
+```
+
+
+main(int argc, char **argv)        src/java.base/share/native/launcher/main.c
+
+return JLI_Launch(margc, margv     src/java.base/share/native/launcher/main.c
+
+
+
+
+```
