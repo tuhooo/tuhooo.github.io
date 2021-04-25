@@ -49,11 +49,39 @@ main(int argc, char **argv)
 ```
 
 
-main(int argc, char **argv)        src/java.base/share/native/launcher/main.c
-
-return JLI_Launch(margc, margv     src/java.base/share/native/launcher/main.c
-
-
-
+main(int argc, char **argv)                 invoked in: src/java.base/share/native/launcher/main.c
+return JLI_Launch(margc, margv              invoked in: src/java.base/share/native/launcher/main.c
+InitLauncher(javaw)                         invoked in: src/java.base/share/native/libjli/java.c
+CreateExecutionEnvironment(&argc, &argv     invoked in: src/java.base/share/native/libjli/java.c
+LoadJavaVM(jvmpath, &ifn)                   invoked in: src/java.base/share/native/libjli/java.c
+JVMInit(&ifn, threadStackSize               invoked in: src/java.base/share/native/libjli/java.c
+ContinueInNewThread                         invoked in: src/java.base/unix/native/libjli/java_md.c
+ifn->GetDefaultJavaVMInitArgs(&args1_1);    invoked in: src/java.base/share/native/libjli/java.c
+CallJavaMainInNewThread                     invoked in: src/java.base/share/native/libjli/java.c
+ThreadJavaMain                              invoked in: src/java.base/unix/native/libjli/java_md.c
+JavaMain                                    invoked in: src/java.base/unix/native/libjli/java_md.c
+InitializeJVM(&vm, &env, &ifn)              invoked in: src/java.base/share/native/libjli/java.c
+ifn->CreateJavaVM(pvm,                      invoked in: src/java.base/share/native/libjli/java.c
+   
 
 ```
+
+`JLI_Launch` is defined in: `src/java.base/share/native/libjli/java.c`
+
+`InitLauncher(javaw)` is defined in: ``
+
+
+`jvmtype = CheckJvmType(pargc, pargv, JNI_FALSE);`
+
+
+`GetJVMPath(jrepath, jvmtype, jvmpath, so_jvmpath)`
+
+
+jvmpath="/home/egova/openjdk/build/linux-x86_64-server-slowdebug/jdk/lib/server/libjvm.so"
+
+
+After `LoadJavaVM`, ifn gets three addresses:
+* JNI_CreateJavaVM
+* JNI_GetDefaultJavaVMInitArgs
+* JNI_GetCreatedJavaVMs
+
