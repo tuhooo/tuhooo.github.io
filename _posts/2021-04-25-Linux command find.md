@@ -8,6 +8,8 @@ category: linux
 
 
 
+## Use find and grep to search code
+
 Use `find` and `grep` to search something in src tree is very quick and convenient.
 
 
