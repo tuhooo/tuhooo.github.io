@@ -70,8 +70,8 @@ mainClass = LoadMainClass(env, mode, what)  defined in: src/java.base/share/nati
 ```
 
 ```
-JLI_Launch is defined in: `src/java.base/share/native/libjli/java.c
-InitLauncher(javaw)` is defined in: jvmtype = CheckJvmType(pargc, pargv, JNI_FALSE);
+JLI_Launch is defined in: src/java.base/share/native/libjli/java.c
+InitLauncher(javaw) is defined in: jvmtype = CheckJvmType(pargc, pargv, JNI_FALSE);
 GetJVMPath(jrepath, jvmtype, jvmpath, so_jvmpath)
 jvmpath="/home/egova/openjdk/build/linux-x86_64-server-slowdebug/jdk/lib/server/libjvm.so"
 ```
