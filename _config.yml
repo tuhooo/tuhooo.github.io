@@ -1,5 +1,5 @@
 title: Welcome to YangXu's homepage! # name of the site
-author: Xu Yang # name of site's author
+author: Yang Xu # name of site's author
 email: tuhooo@163.com # email of site's author
 url: tuhooo.github.io # root address of the site
 baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
