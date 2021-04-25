@@ -2,36 +2,28 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: info
+  - title: Info
     entries:
-      - title: github repo
-        url: https://github.com/tuhooo/tuhooo.github.io
+#      - title: github repo
+#        url: https://github.com/tuhooo/tuhooo.github.io
       - title: contact me - tuhooo@163.com
 
-  - title: all posts
+  - title: All posts
     post_list:
       limit: 5
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: posts by category
+  - title: Posts by category
     post_list:
       category: example2
       show_more: true
       show_more_text: See more posts...
       show_more_url: example2-archive.html
 
-  - title: rss
+  - title: RSS
     url: feed.xml
   
-  - title: another list
-    entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: about me
-            url: about
-  - title: PRO TIP
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
+  - title: About me
+    url: about
